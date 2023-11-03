@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Swiper slide -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/keen-slider.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="mainNav bg-[#24053e] h-[18rem] xl:h-[500px]">
+      <nav
+        class="flex justify-between p-3 items-center xl:justify-between xl:mx-[10rem] lg:mx-[5rem] md:mx-[5rem] sm:mx-[5rem] max-[640px]:mx-[1rem]"
+      >
+        <div>
+          <img src="./img/logo-light.svg" alt="" width="60px" />
+        </div>
+        <div>
+          <a href="#" class="text-white text-[10px] apply">Apply for access</a>
+        </div>
+      </nav>
+      <main>
+        <div
+          class="content p-[20px] mx-auto justify-center flex flex-col items-center"
+        >
+          <h1
+            class="text-white text-3xl xl:text-[3rem] xl:w-[400px] w-[300px] text-center anim"
+          >
+            Data tailored to your needs.
+          </h1>
+          <button class="bg-[#44FFA1] mt-3 px-2 py-1 text-sm btnAnim">
+            Learn More
+          </button>
+        </div>
+        <div class="phone">
+          <img src="./img/image-hero.webp" alt="" />
+        </div>
+      </main>
+    </section>
+    <section
+      class="boxContainer xl:mt-[3rem] mx-auto lg:max-w-[1000px] text-center py-[5rem]"
+    >
+      <div
+        class="grid grid-cols-1 p-5 lg:gap-[4rem] sm:px-5 sm:grid-cols-2 md:grid-cols-3 gap-5"
+      >
+        <div class="box1">
+          <span class="custombr">1</span>
+          <h2 class="text-[#24053E] text-sm xl:text-3xl">
+            Actionable insights
+          </h2>
+          <p class="text-sm lg:max-w-sm lg:mx-auto xl:text-xl xl:mt-1">
+            Optimize your products, improve customer satisfaction and stay ahead
+            of the competition with our product data analytics
+          </p>
+        </div>
+        <div class="box2">
+          <span class="custombr">2</span>
+          <h2 class="text-[#24053E] text-sm xl:text-[1.7rem]">
+            Data-driven decisions
+          </h2>
+          <p class="text-sm lg:max-w-sm lg:mx-auto xl:text-xl xl:mt-1">
+            Make data-driven decisions with our product data analytics. Our
+            AI-generated reports help you unlock insights hidden in your product
+            data.
+          </p>
+        </div>
+        <div class="box3 sm:col-span-2 md:col-span-1">
+          <span class="custombr">3</span>
+          <h2 class="text-[#24053E] text-sm xl:text-3xl">Always affordable</h2>
+          <p
+            class="text-sm sm:max-w-sm sm:text-center sm:mx-auto lg:max-w-sm lg:mx-auto xl:text-xl xl:mt-1"
+          >
+            Always affordable pricing that scales with your business. Get
+            top-quality product data analytics services without hidden costs or
+            unexpected fees.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="ourCustome">
+      <section class="bg-gray-50">
+        <div class="mx-auto max-w-[1000px] px-4 sm:px-6 lg:pe-0 lg:ps-8">
+          <div
+            class="grid grid-cols-1 gap-8 lg:grid-cols-3 lg:items-center lg:gap-16"
+          >
+            <div
+              class="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right"
+            >
+              <h2
+                class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+              >
+                Don't just take our word for it...
+              </h2>
+
+              <p class="mt-4 text-gray-700">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Voluptas veritatis illo placeat harum porro optio fugit a culpa
+                sunt id!
+              </p>
+
+              <div class="hidden lg:mt-8 lg:flex lg:gap-4">
+                <button
+                  aria-label="Previous slide"
+                  id="keen-slider-previous-desktop"
+                  class="rounded-full border border-rose-600 p-3 text-rose-600 transition hover:bg-rose-600 hover:text-white"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="h-5 w-5 rtl:rotate-180"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M15.75 19.5L8.25 12l7.5-7.5"
+                    />
+                  </svg>
+                </button>
+
+                <button
+                  aria-label="Next slide"
+                  id="keen-slider-next-desktop"
+                  class="rounded-full border border-rose-600 p-3 text-rose-600 transition hover:bg-rose-600 hover:text-white"
+                >
+                  <svg
+                    class="h-5 w-5 rtl:rotate-180"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9 5l7 7-7 7"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <div class="-mx-6 lg:col-span-2 lg:mx-0">
+              <div id="keen-slider" class="keen-slider">
+                <div class="keen-slider__slide">
+                  <blockquote
+                    class="flex h-full flex-col justify-between bg-white p-6 shadow-sm sm:p-8 lg:p-12"
+                  >
+                    <div>
+                      <div class="flex gap-0.5 text-[#fde047]">
+                        <svg
+                          class="h-5 w-5"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+
+                        <svg
+                          class="h-5 w-5"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+
+                        <svg
+                          class="h-5 w-5"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+
+                        <svg
+                          class="h-5 w-5"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+
+                        <svg
+                          class="h-5 w-5"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                      </div>
+
+                      <div class="mt-4">
+                        <p class="text-2xl font-bold text-rose-600 sm:text-3xl">
+                          Stayin' Alive
+                        </p>
+
+                        <p class="mt-4 leading-relaxed text-gray-700">
+                          No, Rose, they are not breathing. And they have no
+                          arms or legs … Where are they? You know what? If we
+                          come across somebody with no arms or legs, do we
+                          bother resuscitating them? I mean, what quality of
+                          life do we have there?
+                        </p>
+                      </div>
+                    </div>
+
+                    <footer
+                      class="mt-4 text-sm font-medium text-gray-700 sm:mt-6"
+                    >
+                      &mdash; Michael Scott
+                    </footer>
+                  </blockquote>
+                </div>
+
+                <div class="keen-slider__slide">
+                  <blockquote
+                    class="flex h-full flex-col justify-between bg-white p-6 shadow-sm sm:p-8 lg:p-12"
+                  >
+                    <div>
+                      <div class="flex gap-0.5 text-[#fde047]">
+                        <svg
+                          class="h-5 w-5"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+
+                        <svg
+                          class="h-5 w-5"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+
+                        <svg
+                          class="h-5 w-5"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+
+                        <svg
+                          class="h-5 w-5"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+
+                        <svg
+                          class="h-5 w-5"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                      </div>
+
+                      <div class="mt-4">
+                        <p class="text-2xl font-bold text-rose-600 sm:text-3xl">
+                          Stayin' Alive
+                        </p>
+
+                        <p class="mt-4 leading-relaxed text-gray-700">
+                          No, Rose, they are not breathing. And they have no
+                          arms or legs … Where are they? You know what? If we
+                          come across somebody with no arms or legs, do we
+                          bother resuscitating them? I mean, what quality of
+                          life do we have there?
+                        </p>
+                      </div>
+                    </div>
+
+                    <footer
+                      class="mt-4 text-sm font-medium text-gray-700 sm:mt-6"
+                    >
+                      &mdash; Michael Scott
+                    </footer>
+                  </blockquote>
+                </div>
+
+                <div class="keen-slider__slide">
+                  <blockquote
+                    class="flex h-full flex-col justify-between bg-white p-6 shadow-sm sm:p-8 lg:p-12"
+                  >
+                    <div>
+                      <div class="flex gap-0.5 text-[#fde047]">
+                        <svg
+                          class="h-5 w-5"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+
+                        <svg
+                          class="h-5 w-5"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+
+                        <svg
+                          class="h-5 w-5"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+
+                        <svg
+                          class="h-5 w-5"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+
+                        <svg
+                          class="h-5 w-5"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                      </div>
+
+                      <div class="mt-4">
+                        <p class="text-2xl font-bold text-rose-600 sm:text-3xl">
+                          Stayin' Alive
+                        </p>
+
+                        <p class="mt-4 leading-relaxed text-gray-700">
+                          No, Rose, they are not breathing. And they have no
+                          arms or legs … Where are they? You know what? If we
+                          come across somebody with no arms or legs, do we
+                          bother resuscitating them? I mean, what quality of
+                          life do we have there?
+                        </p>
+                      </div>
+                    </div>
+
+                    <footer
+                      class="mt-4 text-sm font-medium text-gray-700 sm:mt-6"
+                    >
+                      &mdash; Michael Scott
+                    </footer>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-8 flex justify-center gap-4 lg:hidden">
+            <button
+              aria-label="Previous slide"
+              id="keen-slider-previous"
+              class="rounded-full border border-rose-600 p-4 text-rose-600 transition hover:bg-rose-600 hover:text-white"
+            >
+              <svg
+                class="h-5 w-5 -rotate-180 transform"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9 5l7 7-7 7"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                />
+              </svg>
+            </button>
+
+            <button
+              aria-label="Next slide"
+              id="keen-slider-next"
+              class="rounded-full border border-rose-600 p-4 text-rose-600 transition hover:bg-rose-600 hover:text-white"
+            >
+              <svg
+                class="h-5 w-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9 5l7 7-7 7"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <footer class="footer-1 bg-gray-100 py-8 sm:py-12">
+      <div class="max-w-[980px] justify-center mx-auto px-4">
+        <div class="sm:flex sm:flex-wrap sm:-mx-4 md:py-4">
+          <div class="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6">
+            <h5 class="text-xl font-bold mb-6">Features</h5>
+            <ul class="list-none footer-links">
+              <li class="mb-2">
+                <a
+                  href="#"
+                  class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800"
+                  >Cool stuff</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="#"
+                  class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800"
+                  >Random feature</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="#"
+                  class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800"
+                  >Team feature</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="#"
+                  class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800"
+                  >Stuff for developers</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="#"
+                  class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800"
+                  >Another one</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="#"
+                  class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800"
+                  >Last time</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6 mt-8 sm:mt-0">
+            <h5 class="text-xl font-bold mb-6">Resources</h5>
+            <ul class="list-none footer-links">
+              <li class="mb-2">
+                <a
+                  href="#"
+                  class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800"
+                  >Resource</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="#"
+                  class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800"
+                  >Resource name</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="#"
+                  class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800"
+                  >Another resource</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="#"
+                  class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800"
+                  >Final resource</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6 mt-8 md:mt-0">
+            <h5 class="text-xl font-bold mb-6">About</h5>
+            <ul class="list-none footer-links">
+              <li class="mb-2">
+                <a
+                  href="#"
+                  class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800"
+                  >Team</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="#"
+                  class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800"
+                  >Locations</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="#"
+                  class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800"
+                  >Privacy</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="#"
+                  class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800"
+                  >Terms</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6 mt-8 md:mt-0">
+            <h5 class="text-xl font-bold mb-6">Help</h5>
+            <ul class="list-none footer-links">
+              <li class="mb-2">
+                <a
+                  href="#"
+                  class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800"
+                  >Support</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="#"
+                  class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800"
+                  >Help Center</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="#"
+                  class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div
+            class="px-4 mt-4 sm:w-1/3 xl:w-1/6 sm:mx-auto xl:mt-0 xl:ml-auto"
+          >
+            <h5 class="text-xl font-bold mb-6 sm:text-center xl:text-left">
+              Stay connected
+            </h5>
+            <div class="flex sm:justify-center xl:justify-start">
+              <a
+                href=""
+                class="w-8 h-8 border border-2 border-gray-400 rounded-full text-center py-1 text-gray-600 hover:text-white hover:bg-blue-600 hover:border-blue-600"
+              >
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a
+                href=""
+                class="w-8 h-8 border border-2 border-gray-400 rounded-full text-center py-1 ml-2 text-gray-600 hover:text-white hover:bg-blue-400 hover:border-blue-400"
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a
+                href=""
+                class="w-8 h-8 border border-2 border-gray-400 rounded-full text-center py-1 ml-2 text-gray-600 hover:text-white hover:bg-red-600 hover:border-red-600"
+              >
+                <i class="fab fa-google-plus-g"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="sm:flex sm:flex-wrap sm:-mx-4 mt-6 pt-6 sm:mt-12 sm:pt-12 border-t"
+        >
+          <div class="sm:w-full px-4 md:w-1/6">
+            <strong>FWR</strong>
+          </div>
+          <div class="px-4 sm:w-1/2 md:w-1/4 mt-4 md:mt-0">
+            <h6 class="font-bold mb-2">Address</h6>
+            <address class="not-italic mb-4 text-sm">
+              123 6th St.<br />
+              Melbourne, FL 32904
+            </address>
+          </div>
+          <div class="px-4 sm:w-1/2 md:w-1/4 mt-4 md:mt-0">
+            <h6 class="font-bold mb-2">Free Resources</h6>
+            <p class="mb-4 text-sm">
+              Use our HTML blocks for <strong>FREE</strong>.<br />
+              <em>All are MIT License</em>
+            </p>
+          </div>
+          <div class="px-4 md:w-1/4 md:ml-auto mt-6 sm:mt-4 md:mt-0">
+            <button
+              class="px-4 py-2 bg-purple-800 hover:bg-purple-900 rounded text-white"
+            >
+              Get Started
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module">
+      import KeenSlider from "https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/+esm";
+
+      const keenSlider = new KeenSlider(
+        "#keen-slider",
+        {
+          loop: true,
+          slides: {
+            origin: "center",
+            perView: 1.25,
+            spacing: 16,
+          },
+          breakpoints: {
+            "(min-width: 1024px)": {
+              slides: {
+                origin: "auto",
+                perView: 1.5,
+                spacing: 32,
+              },
+            },
+          },
+        },
+        []
+      );
+
+      const keenSliderPrevious = document.getElementById(
+        "keen-slider-previous"
+      );
+      const keenSliderNext = document.getElementById("keen-slider-next");
+
+      const keenSliderPreviousDesktop = document.getElementById(
+        "keen-slider-previous-desktop"
+      );
+      const keenSliderNextDesktop = document.getElementById(
+        "keen-slider-next-desktop"
+      );
+
+      keenSliderPrevious.addEventListener("click", () => keenSlider.prev());
+      keenSliderNext.addEventListener("click", () => keenSlider.next());
+
+      keenSliderPreviousDesktop.addEventListener("click", () =>
+        keenSlider.prev()
+      );
+      keenSliderNextDesktop.addEventListener("click", () => keenSlider.next());
+    </script>
+  </body>
+</html>
